@@ -1,0 +1,398 @@
+// Global styles
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'shapiro35_feather', sans-serif;
+    position: relative;
+    color: $text-primary;
+}
+
+header,
+section,
+footer {
+    width: 100%;
+    float: left;
+}
+
+.mh-100 {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    @include transition(ease, 0.3s);
+
+    &:hover {
+        color: $text-link;
+    }
+}
+
+.py-60 {
+    padding: 60px 0;
+}
+
+.pt-60 {
+    padding-top: 60px;
+}
+
+.pb-60 {
+    padding-bottom: 60px;
+}
+
+.py-30 {
+    padding: 30px 0;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.whatsapp {
+    @include whatsapp-button;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'moderatextended_medium', sans-serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    letter-spacing: -2px;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    // color: ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    @include transition(ease, 0.2s);
+
+    ul {
+        margin-bottom: 0;
+    }
+
+    #logo-navbar {
+        width: 160px;
+        @include transition(ease, 0.2s);
+    }
+
+    #mburger {
+        font-size: 2rem;
+
+        &:hover,
+        &:focus {
+            color: $text-tertiary;
+        }
+    }
+
+    .top,
+    .bottom {
+        @include transition(ease, 0.3s);
+    }
+
+    .top {
+        background-color: #4E4E4E;
+        color: $text-secondary;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        a {
+            color: $text-secondary;
+
+            &:hover {
+                background-color: $secondary;
+                color: $text-secondary;
+            }
+        }
+
+        .social {
+            a {
+                border: 1px solid $text-secondary;
+                border-radius: 50px;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include transition(ease, 0.3s);
+
+                &:hover {
+                    background-color: $secondary;
+                    color: $text-secondary;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        background-color: $bg-white;
+        width: 100%;
+        float: left;
+        padding-top: 30px;
+        padding-bottom: 15px;
+
+        a {
+            color: $text-primary;
+
+            &:hover {
+                color: $text-tertiary;
+            }
+        }
+
+        .list-inline-item:not(:last-child) {
+            margin-right: 3.5rem;
+        }
+    }
+}
+
+.navbar-scroll {
+    // background-color: ;
+    @include transition(ease, 0.3s);
+
+    #mburger {
+        // color: !important;
+    }
+
+    .top {
+        height: 0;
+        padding: 0;
+
+        ul,
+        a {
+            display: none;
+        }
+    }
+}
+
+#mapa {
+    line-height: 0;
+    
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+#jumbotron {
+    border-bottom: 30px solid #A3A3A3;
+
+    #carrusel-principal {
+        .slide {
+            width: 100%;
+            min-height: 100vh;
+            float: left;
+            color: $text-secondary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        @for $i from 1 through 3 {
+            .slide-#{$i} {
+                @include background('../images/bg-slide-#{$i}.png', center, cover);
+            }
+        }
+
+        .carousel-indicators {
+            [data-bs-target] {
+                background-color: transparent;
+                border: 1px solid $bg-white;
+                border-radius: 50%;
+                width: 15px;
+                height: 15px;
+                margin-left: 8px;
+                margin-right: 8px;
+            }
+
+            .active {
+                background-color: $bg-white;
+            }
+        }
+    }
+}
+
+#equipos {
+    border-top: 60px solid #CCCCCC;
+
+    .logo {
+        max-width: 50px;
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    hr {
+        max-width: 50px;
+    }
+
+    .card {
+        border: none;
+        border-radius: 0;
+        position: relative;
+
+        .overlay {
+            background-color: rgb(226, 43, 0, 0.5);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            float: left;
+            opacity: 0;
+            z-index: 1;
+            @include transition(ease, 0.3s);
+        }
+
+        .card-img-top {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        .card-body {
+            background-color: $primary;
+            color: $text-secondary;
+            position: relative;
+            text-align: center;
+            z-index: 3;
+
+            h5 {
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            .overlay {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+#descanso {
+    @include background('../images/bg-descanso.png', center, cover);
+    color: $text-secondary;
+    padding-top: 60px;
+
+    .logo {
+        max-width: 50px;
+    }
+}
+
+#servicios {
+    .logo {
+        max-width: 50px;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        li {
+            &::marker {
+                color: $primary;
+            }
+        }
+    }
+}
+
+#contacto {
+    .logo {
+        max-width: 50px;
+        margin-bottom: 1rem;
+    }
+
+    a {
+        color: $secondary;
+
+        &:hover {
+            color: $text-link;
+        }
+    }
+
+    ul {
+        font-size: 1.4rem;
+
+        li {
+            margin-bottom: 2.2rem
+        }
+    }
+
+    .form-control {
+        background-color: #CACACA;
+        border-radius: 0;
+    }
+}
+
+footer {
+    @include background('../images/bg-footer.png', center, cover);
+    color: $text-secondary;
+    padding: 30px 0;
+    font-size: 0.8rem;
+
+    a {
+        color: $text-secondary;
+
+        &:hover {
+            color: $text-secondary;
+            text-decoration: underline;
+        }
+    }
+
+    .logo {
+        max-width: 80%;
+    }
+
+    .menus {
+        margin-bottom: 60px;
+
+        ul {
+            line-height: 2rem;
+        }
+    }
+
+    .form-control {
+        border-radius: 0;
+    }
+
+    .social {
+        a {
+            background-color: $bg-white;
+            color: $text-tertiary;
+            width: 34px;
+            height: 34px;
+            border-radius: 50px;
+            font-size: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                color: $text-link;
+                text-decoration: none;
+            }
+        }
+    }
+}

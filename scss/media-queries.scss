@@ -1,0 +1,88 @@
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-up(sm) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
+    #equipos,
+    #servicios,
+    #contacto {
+        .logo {
+            max-width: 100%;
+        }
+    }
+
+    #descanso {
+        padding-top: 0;
+
+        .thumb-descanso {
+            position: relative;
+            top: -40px;
+            margin-bottom: -40px;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {
+    #jumbotron {
+        #carrusel-principal {
+            .slide {
+                p {
+                    position: relative;
+        
+                    &::before {
+                        @include background('../images/diagonal.png', center, contain);
+                        position: absolute;
+                        top: -118px;
+                        left: -90px;
+                        content: "";
+                        width: 140px;
+                        height: 252px;
+                    }
+                }
+            }
+
+            .caption {
+                height: 100px;
+            }
+        }
+    }
+
+    #equipos,
+    #servicios,
+    #contacto {
+        .logo {
+            margin-bottom: 0;
+        }
+    }
+
+    #descanso {
+        p {
+            position: relative;
+
+            &::before {
+                @include background('../images/diagonal.png', center, contain);
+                position: absolute;
+                top: -82px;
+                left: -122px;
+                content: "";
+                width: 140px;
+                height: 252px;
+            }
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@include media-breakpoint-up(xl) {
+
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@include media-breakpoint-up(xxl) {
+
+}

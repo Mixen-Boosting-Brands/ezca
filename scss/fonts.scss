@@ -1,0 +1,23 @@
+// Fonts
+$fa-font-path: "../fonts/webfonts" !default;
+
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/regular';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/solid';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/brands';
+
+@font-face {
+    font-family: 'moderatextended_medium';
+    src: url('../fonts/moderat_extended_medium-webfont.woff2') format('woff2'),
+        url('../fonts/moderat_extended_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'shapiro35_feather';
+    src: url('../fonts/shapiro_35_feather-webfont.woff2') format('woff2'),
+        url('../fonts/shapiro_35_feather-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

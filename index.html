@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EZCA Logística</title>
+
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <div id="backdrop"></div>
+    <div class="menu">
+        <a id="cerrar-menu" href="javascript:void(0)">
+            <i class="fas fa-times"></i>
+        </a>
+        <div class="menu-contenido">
+            <a class="anchor" id="btn-logo" href="#">
+                <img class="logo img-fluid" src="./assets/images/logo.png" alt="">
+            </a>
+            <nav>
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="anchor" id="btn-nav-1" href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="anchor" id="btn-nav-2" href="#">Equipos</a>
+                    </li>
+                    <li>
+                        <a class="anchor" id="btn-nav-3" href="#">Servicios</a>
+                    </li>
+                    <li>
+                        <a class="anchor" id="btn-nav-4" href="#">Ubicación</a>
+                    </li>
+                    <li>
+                        <a class="anchor" id="btn-nav-5" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="anchor btn btn-primary" id="btn-contacto">Contáctanos</a>
+            <div id="social">
+                <ul class="list-inline">
+                    <li class="social list-inline-item">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="social list-inline-item">
+                        <a href="https://linkedin.com/" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="contacto-menu">
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="far fa-envelope"></i> <a href="mailto:cmail@domain.com">mail@domain.com</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i> <a href="tel:+526141234567">(614) 123 4567</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <header id="navbar">
+        <div class="container-fluid top">
+            <div class="row">
+                <div class="col-6 my-auto">
+                    <ul class="social list-inline">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://linkedin.com/" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 my-auto text-end">
+                    <a href="#">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 my-auto">
+                        <a href="#">
+                            <img src="./assets/images/logo.png" alt="" class="logo img-fluid" id="logo-navbar">
+                        </a>
+                    </div>
+                    <div class="col-8 my-auto text-end">
+                        <nav class="d-none d-lg-block">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a class="anchor" href="#">
+                                        Inicio
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="anchor" href="#">
+                                        Equipos
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="anchor" href="#">
+                                        Servicios
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="anchor" href="#">
+                                        Ubicación
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="anchor" href="#">
+                                        Contacto
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <a id="mburger" class="d-lg-none" href="javascript:void(0)">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="jumbotron">
+        <div id="carrusel-principal" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="slide slide-1">
+                        <div class="container">
+                            <div class="row mt-5">
+                                <div class="col-lg-6 d-flex justify-content-lg-end align-items-lg-start caption">
+                                    <h1>Soluciones</h1>
+                                </div>
+                                <div class="col-lg-6 d-flex align-items-lg-end caption">
+                                    <p>Ofrecemos soluciones efectivas en cada reto.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slide slide-1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 d-flex justify-content-lg-end align-items-lg-start caption">
+                                    <h1>Soluciones</h1>
+                                </div>
+                                <div class="col-lg-6 d-flex align-items-lg-end caption">
+                                    <p>Ofrecemos soluciones efectivas en cada reto.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slide slide-1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 d-flex justify-content-lg-end align-items-lg-start caption">
+                                    <h1>Soluciones</h1>
+                                </div>
+                                <div class="col-lg-6 d-flex align-items-lg-end caption">
+                                    <p>Ofrecemos soluciones efectivas en cada reto.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrusel-principal" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carrusel-principal" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carrusel-principal" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipos" class="py-60">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-1 my-auto">
+                    <img class="logo" src="./assets/images/logo-gris.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-3 my-auto">
+                    <h1>Los mejores operadores</h1>
+                </div>
+                <div class="col-lg-3 my-auto">
+                    <hr>
+                    <p>Y el equipo más moderno en todas nuestras entregas.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-equipos-">
+                            <div class="overlay"></div>
+                        </a>
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-equipos-">
+                            <img src="./assets/images/thumb-equipos-1.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-text">Texto</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus fuga nemo aperiam repudiandae deserunt modi magni.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-equipos-">
+                            <div class="overlay"></div>
+                        </a>
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-equipos-">
+                            <img src="./assets/images/thumb-equipos-1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-text">Texto</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus fuga nemo aperiam
+                                    repudiandae deserunt modi magni.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-equipos-">
+                            <div class="overlay"></div>
+                        </a>
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-equipos-">
+                            <img src="./assets/images/thumb-equipos-1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-text">Texto</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus fuga nemo aperiam
+                                    repudiandae deserunt modi magni.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-equipos-">
+                            <div class="overlay"></div>
+                        </a>
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-equipos-">
+                            <img src="./assets/images/thumb-equipos-1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-text">Texto</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus fuga nemo aperiam
+                                    repudiandae deserunt modi magni.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-equipos-">
+                            <div class="overlay"></div>
+                        </a>
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-equipos-">
+                            <img src="./assets/images/thumb-equipos-1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-text">Texto</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus fuga nemo aperiam
+                                    repudiandae deserunt modi magni.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-equipos-">
+                            <div class="overlay"></div>
+                        </a>
+                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-equipos-">
+                            <img src="./assets/images/thumb-equipos-1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-text">Texto</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus fuga nemo aperiam
+                                    repudiandae deserunt modi magni.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="descanso">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-md-end mb-4 my-md-auto">
+                    <h1>Entregas puntuales</h1>
+                    <img class="logo" src="./assets/images/logo-descanso.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-4 col-lg-3 offset-lg-1 mb-4 my-md-auto">
+                    <p>Tenemos sucursales disponibles para brindarte un servicio eficaz y oportuno en cada entrega.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img class="thumb-descanso" src="./assets/images/thumb-descanso.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 my-md-auto">
+                    <div class="row">
+                        <div class="col-lg-2 my-auto">
+                            <img class="logo" src="./assets/images/logo-gris.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-lg-6 my-auto">
+                            <h1>Nuestros servicios</h1>
+                        </div>
+                        <div class="col-12">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur similique sint cumque deserunt quidem autem sed, nemo, ipsam, facere pariatur dolorem aperiam repudiandae accusantium? Qui id repudiandae dolorem pariatur aliquam.</p>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li>Plataformas</li>
+                                <li>Volteos sencillos</li>
+                                <li>Porta-Rollos</li>
+                                <li>Plataformas Encortinadas</li>
+                                <li>Tolvas Presurizadas</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li>Auto-Tanques</li>
+                                <li>Volteo Full</li>
+                                <li>Porta Contenedores</li>
+                                <li>Cajas Secas</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="#" class="btn btn-primary">
+                                Solicita cotización
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="./assets/images/thumb-servicios.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mapa">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14006.707367875195!2d-106.07487386048574!3d28.63944594129197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea43510ece9a47%3A0x1c2aad93a1579fd4!2sPlaza%20del%20%C3%81ngel!5e0!3m2!1sen!2smx!4v1680200387822!5m2!1sen!2smx"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section id="contacto" class="py-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 mb-4 my-md-auto">
+                    <div class="row">
+                        <div class="col-lg-2 my-auto">
+                            <img class="logo" src="./assets/images/logo-gris.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-lg-6 my-auto">
+                            <h1>Contacto</h1>
+                        </div>
+                        <div class="col-12">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur similique sint cumque
+                                deserunt quidem autem sed, nemo, ipsam, facere pariatur dolorem aperiam repudiandae
+                                accusantium? Qui id repudiandae dolorem pariatur aliquam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7 mb-4 my-md-auto">
+                    <!-- Aquí se inyecta feedback a usuario vía Ajax -->
+                    <div id="form-messages"></div>
+                    <!-- /Aquí se inyecta feedback a usuario vía Ajax -->
+                    <form data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" action="mailer.php" method="POST"
+                        class="row g-3 needs-validation contact-form mb-4 mb-lg-0" id="ajax-contact" novalidate>
+                        <div class="col-md-6 form-floating">
+                            <input type="text" class="form-control shadow-none" id="nombre" name="nombre" placeholder="Nombre*"
+                                pattern=".{5,50}" required>
+                            <label for="nombre" class="form-label">Nombre*</label>
+                            <div class="valid-feedback">
+                                ¡Se ve bien!
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor introduce tu nombre completo.
+                            </div>
+                        </div>
+                        <div class="col-md-6 form-floating">
+                            <input type="email" class="form-control shadow-none" id="correo" name="correo" placeholder="Correo*" required>
+                            <label for="correo" class="form-label">Correo*</label>
+                            <div class="valid-feedback">
+                                ¡Se ve bien!
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor introduce un correo electrónico válido.
+                            </div>
+                        </div>
+                        <div class="col-md-6 form-floating">
+                            <input type="tel" class="form-control shadow-none" id="telefono" name="telefono" placeholder="Teléfono*"
+                                required>
+                            <label for="telefono" class="form-label">Teléfono*</label>
+                            <div class="valid-feedback">
+                                ¡Se ve bien!
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor introduce un número de teléfono válido.
+                            </div>
+                        </div>
+                        <div class="col-md-6 form-floating">
+                            <input type="text" class="form-control shadow-none" id="empresa" name="empresa" placeholder="Empresa*"
+                                pattern=".{5,50}" required>
+                            <label for="empresa" class="form-label">Empresa*</label>
+                            <div class="valid-feedback">
+                                ¡Se ve bien!
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor introduce tu empresa.
+                            </div>
+                        </div>
+                        <div class="col-md-6 form-floating">
+                            <input type="text" class="form-control shadow-none" id="tipo-de-transporte" name="tipo-de-transporte" placeholder="Tipo de transporte*"
+                                pattern=".{5,50}" required>
+                            <label for="tipo-de-transporte" class="form-label">Tipo de transporte*</label>
+                            <div class="valid-feedback">
+                                ¡Se ve bien!
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor introduce el tipo de transporte.
+                            </div>
+                        </div>
+                        <div class="col-md-6 form-floating">
+                            <input type="text" class="form-control shadow-none" id="volumen" name="volumen" placeholder="Volumen*"
+                                pattern=".{5,50}" required>
+                            <label for="volumen" class="form-label">Volumen*</label>
+                            <div class="valid-feedback">
+                                ¡Se ve bien!
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor introduce el volumen.
+                            </div>
+                        </div>
+                        <div class="col-md-6 form-floating">
+                            <input type="text" class="form-control shadow-none" id="destino" name="destino" placeholder="Destino*"
+                                pattern=".{5,50}" required>
+                            <label for="destino" class="form-label">Destino*</label>
+                            <div class="valid-feedback">
+                                ¡Se ve bien!
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor introduce el destino.
+                            </div>
+                        </div>
+                        <div class="col-md-6 form-floating">
+                            <input type="text" class="form-control shadow-none" id="origen" name="origen" placeholder="Origen*"
+                                pattern=".{5,50}" required>
+                            <label for="origen" class="form-label">Origen*</label>
+                            <div class="valid-feedback">
+                                ¡Se ve bien!
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor introduce el origen.
+                            </div>
+                        </div>
+                        <div class="col-md-12 form-floating mb-4">
+                            <textarea class="form-control shadow-none" id="mensaje" name="mensaje" placeholder="Mensaje*"
+                                style="height: 100px;" required></textarea>
+                            <label for="mensaje">Mensaje*</label>
+                            <div class="valid-feedback">
+                                ¡Se ve bien!
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor introduce tu mensaje.
+                            </div>
+                        </div>
+                        <div class="col-md-6 my-auto">
+                            <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-paper-plane"></i>
+                                Enviar</button>
+                            <div id="hold-on-a-sec">
+                                <i id="contact-spinner" class="fas fa-spinner fa-spin"></i> Espera un momento por favor...
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-5">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-location-dot"></i> Lorem ipsum dolor sit amet,
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:">
+                                <i class="fa-solid fa-phone"></i> (614) 123 4567
+                            </a>
+                        </li>
+                    </ul>
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-12">
+                    <a href="#">
+                        <img class="logo" src="./assets/images/logo-footer.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-lg-8 offset-lg-1">
+                    <div class="row menus">
+                        <div class="col-lg-4">
+                            <h1>Inicio</h1>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">
+                                        Home.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="anchor" href="#nosotros">
+                                        Nosotros.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="anchor" href="#servicios">
+                                        Servicios.
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <h1>Servicios</h1>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">
+                                        Mecánico.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Eléctrico.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Fabricación.
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <h1>Newsletter</h1>
+                            <form action="">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" name="newsletter" placeholder="Correo" aria-label="Correo"
+                                        aria-describedby="newsletter">
+                                    <button class="btn btn-secondary" type="button" id="newsletter">Suscribir</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <p>&copy; 2023 EZCA Logística. Todos los derechos reservados.</p>
+                            <p>
+                                Made with <i class="fa-solid fa-heart"></i> by <a href="https://mixen.mx/" target="_blank">Mixen</a>.
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <ul class="list-inline">
+                                <li class="social list-inline-item">
+                                    <a href="https://www.facebook.com/" target="_blank">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="social list-inline-item">
+                                    <a href="https://linkedin.com/" target="_blank">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/52614?text=Hola%20EZCA%20Logística,%20necesito%20información." class="whatsapp" target="_blank">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
+
+    <script src="./assets/js/app.bundle.js"></script>
+</body>
+</html>
